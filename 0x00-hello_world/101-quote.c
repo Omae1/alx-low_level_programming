@@ -1,6 +1,11 @@
 #include <unistd.h>
 #include <stdio.h>
 
+/**
+*main- main function the execution starts here
+*
+*Return: returns 1 after program executes
+*/
 int main(void)
 {
 	const char *errorMessage = "and that piece of art is useful\" - Dora\n"
