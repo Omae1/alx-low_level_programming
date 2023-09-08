@@ -1,5 +1,5 @@
-#include <unistd.h>
 #include <stdio.h>
+#include <unistd.h>
 
 /**
 *main- main function the execution starts here
@@ -8,9 +8,6 @@
 */
 int main(void)
 {
-	const char *errorMessage = "and that piece of art is useful\" - Dora\
-Korpar, 2015-10-19\n";
-
-	write(2, errorMessage, 59);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", 59);
 	return (1);
 }
