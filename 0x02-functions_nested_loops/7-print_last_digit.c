@@ -13,10 +13,12 @@ c = -c;
 if (c >= 10 || c <= -10)
 {
 _putchar(c % 10 + 48);
+return (c % 10 + 48);
 }
 else
 {
-_putchar(c + 48);
+_putchar(c / 10 + 48);
+return (c / 10);
 }
 return (0);
 }
