@@ -18,7 +18,7 @@ return (1);
 else if (ch == 0)
 {
 _putchar('0');
-return (1);
+return (0);
 }
 else
 {
