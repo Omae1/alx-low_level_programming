@@ -8,17 +8,14 @@
  */
 int print_last_digit(int c)
 {
-if (c < 0)
-c = -c;
-if (c >= 10 || c <= -10)
+int lastdigit;
+lastdigit = c % 10;
+
+if (lastdigit < 0)
 {
-_putchar(c % 10 + 48);
-return (c % 10 + 48);
+	lastdigit = lastdigit * -1;
 }
-else
-{
-_putchar(c / 10 + 48);
-return (c / 10);
-}
+_putchar(lastdigit + 48);
+return (lastdigit);
 return (0);
 }
