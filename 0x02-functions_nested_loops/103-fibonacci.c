@@ -6,8 +6,6 @@
   * less than 4000000.
   * Return: 0.
   */
-
-
 int main(void)
 {
 	int i = 0;
