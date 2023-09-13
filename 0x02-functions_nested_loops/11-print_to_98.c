@@ -3,7 +3,7 @@
 /**
  *print_to_98 -prints the number to 98
  *
- *@x: must be a number
+ *@n: must be a number
  * Return:  Always 0 (success)
  */
 void print_to_98(int n)
