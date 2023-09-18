@@ -6,6 +6,7 @@
 *
 *
 *@s: the values is a pointer
+*Return: length of the string
 */
 int _strlen(char *s)
 {
@@ -14,8 +15,8 @@ while (*s != '\0')
 {
 length++;
 s++;
-;
+
 }
 
-return length;
+return (length);
 }
