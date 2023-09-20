@@ -20,11 +20,17 @@ while (dest[destLength] != '\0')
 destLength++;
 }
 
-for (i = 0; (i < n - destLength) != '\0'; i++)
+for (i = 0; (i < n && src[i] != '\0'); i++)
 {
 dest[destLength + i] = src[i];
 }
-if (i < (n - destLength))
+if (i < n)
+{
+dest[destLength + i] = src[i];
+}
+else
+{
 dest[(destLength) +i] = '\0';
+}
 return (dest);
 }
