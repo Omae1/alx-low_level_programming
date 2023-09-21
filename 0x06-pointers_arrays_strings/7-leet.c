@@ -11,22 +11,19 @@
 */
 char *leet(char *s)
 {
-char *str = s;
+int i, j;
+char x1[] = "aAeEoOtTlL";
+char x2[] = "4433007711";
 
-while (*s != '\0')
+for (i = 0; s[i] != '\0'; i++)
 {
-if (*s == 'a' || *s == 'A')
-*s = '4';
-else if (*s == 'e' || *s == 'E')
-*s = '3';
-else if (*s == 'o' || *s == 'O')
-*s = '0';
-else if (*s == 't' || *s == 'T')
-*s = '7';
-else if (*s == 'l' || *s == 'L')
-*s = '1';
-
-s++;
+for (j = 0; j < 10; j++)
+{
+if (s[i] == x1[j])
+{
+s[i] = x2[j];
 }
-return (str);
+}
+}
+return (s);
 }
