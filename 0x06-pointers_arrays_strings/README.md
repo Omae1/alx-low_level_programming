@@ -59,4 +59,4 @@ Example:
 
 ```bash
 gcc -Wall -Werror -Wextra -pedantic *.c -o my_program
-./my_program```
+./my_program
