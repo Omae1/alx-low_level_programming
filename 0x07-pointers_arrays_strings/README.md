@@ -1,4 +1,4 @@
-# 0x06 Pointers, Arrays, and Strings
+# 0x07 Even More Pointers, Arrays, and Strings
 
 This repository contains a collection of C source files, each corresponding to a specific function that operates on pointers, arrays, and strings. The functions aim to demonstrate various functionalities related to memory manipulation and string processing.
 
@@ -12,7 +12,7 @@ This repository contains a collection of C source files, each corresponding to a
 
 ## Introduction
 
-The `0x06-pointers_arrays_strings` project is created to help users understand and work with pointers, arrays, and strings in the C programming language. It contains a series of functions, each targeting a specific operation related to memory and string handling. By studying and utilizing this project, users can enhance their knowledge and proficiency in memory management, data manipulation, and efficient programming.
+The `0x07-pointers_arrays_strings` project is created to help users understand and work with pointers, arrays, and strings in the C programming language. It contains a series of functions, each targeting a specific operation related to memory and string handling. By studying and utilizing this project, users can enhance their knowledge and proficiency in memory management, data manipulation, and efficient programming.
 
 ---
 
