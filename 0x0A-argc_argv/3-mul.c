@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 if (argc != 3)
 {
-printf("error: argv cannot be less than two or more than two\n");
+printf("Error\n");
 return (1);
 }
 printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
