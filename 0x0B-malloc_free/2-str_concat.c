@@ -27,6 +27,5 @@ char *str_concat(char *s1, char *s2)
 		str[i++] = *s1++;
 	while (s2 != NULL && *s2 != '\0')
 		str[i++] = *s2++;
-	str[i] = '\0';
 return (str);
 }
