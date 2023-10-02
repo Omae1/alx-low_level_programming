@@ -14,6 +14,14 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 		return ('\0');
+	if (s1 == NULL || *s1 == '\0')
+	{
+		s1 = "";
+	}
+	if (s2 == NULL || *s2 == '\0')
+	{
+		s2 = "";
+	}
 
 	while (s2 != NULL && s2[length2] != '\0')
 		length2++;
