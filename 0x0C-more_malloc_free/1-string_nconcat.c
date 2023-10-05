@@ -15,10 +15,10 @@ unsigned int i = 0, j = 0, k, lsout;
 char *str;
 
 if (s2 == NULL)
-	return ("");
+	s2 = "";
 
 if (s1 == NULL)
-	return ("");
+	s1 = "";
 
 while (s1[i] != '\0')
 	i++;
@@ -36,7 +36,7 @@ if (str == NULL)
 	return (NULL);
 
 for (k = 0; k < lsout; k++)
-	if(k < i)
+	if (k < i)
 		str[k] = s1[k];
 	else
 		str[k] = s2[k - i];
