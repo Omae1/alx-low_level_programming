@@ -11,9 +11,10 @@ size_t list_len(const list_t *h)
 
 	while (h != NULL)
 	{
-		_putchar(h->len);
-		h = h->next;
-		elements++;
+/*		if (h-> str != NULL)*/
+/*			_putchar(h->len);*/
+	h = h->next;
+	elements++;
 
 	}
 	return (elements);
