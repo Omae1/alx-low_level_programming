@@ -1,6 +1,9 @@
 #include "lists.h"
 
-
+/**
+*free_listint - frees listint_t list
+*@head: linked list
+*/
 void free_listint(listint_t *head)
 {
 	listint_t *currentNode = head;
@@ -8,8 +11,7 @@ void free_listint(listint_t *head)
 
 	while (currentNode != NULL)
 	{
-		next = currentNode-> next;
-		free(currentNode->str);
+		next = currentNode->next;
 		free(currentNode);
 		currentNode = next;
 	}
