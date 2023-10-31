@@ -64,6 +64,8 @@ int main(int argc, char *argv[])
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(buff);
+			close(f);
+			close(t);
 			exit(98);
 		}
 		writ = write(t, buff, rd);
@@ -71,11 +73,14 @@ int main(int argc, char *argv[])
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buff);
+			close_fle(f);
+			close(t);
 			exit(99);
 		}
 		rd = read(f, buff, 1024);
 		t = open(argv[2], O_WRONLY | O_APPEND);
 	} while (rd > 0);
+
 	free(buff);
 	close_fle(f);
 	close_fle(t);
